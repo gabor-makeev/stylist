@@ -70,15 +70,80 @@ body {
   font-weight: bold;
 }
 
-/* Info */
-.info ul {
-  list-style-type: none;
-  padding: 0;
+/* Pricing Section */
+.pricing h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
 }
 
-.info li {
+.pricing-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tier {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tier:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.tier h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.tier .price {
+  font-size: 2em;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.tier ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.tier ul li {
   margin: 10px 0;
-  font-size: 1.1em;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.tier button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.tier button:hover {
+  background-color: #333;
+}
+
+.highlighted {
+  border: 2px solid #000;
+  background-color: #f9f7f7;
 }
 
 /* Contact */
